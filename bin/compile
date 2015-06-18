@@ -1,6 +1,6 @@
 #!/usr/bin/env bash
 # bin/compile <build-dir> <cache-dir>
 
-printf "-----> Compressing assets..."
+echo -n "-----> Compressing assets..."
 find $1/public/assets/ \\( -name '*.js' -o -name '*.css' -o -name '*.html' -o -name '*.svg' \\) -exec test ! -e {}.gz \\; -print0 | xargs -0 gzip -kq9 || echo ' nothing to do.'
 echo ' done!'
