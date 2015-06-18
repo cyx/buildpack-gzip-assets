@@ -1,5 +1,4 @@
 #!/usr/bin/env bash
 # bin/detect <build-dir>
 
-test -d $1/public/assets || exit 1
 exit 0
